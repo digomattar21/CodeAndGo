@@ -1,0 +1,175 @@
+body{
+    font-family: 'JetBrains Mono';
+    background-color: black;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    background-color:rgb(23, 152, 212);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8px;
+    margin-left:-8px;
+    width: 101vw;
+}
+
+#title{
+    font-weight:800;
+    color: lawngreen;
+}
+
+#title-container{
+    margin-left: 2%;
+}
+
+#title-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navlist button{
+    text-decoration: none;
+    border: 1px solid darkgray;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: 'JetBrains Mono';
+    border-radius: 10%;
+    color: black;
+    font-weight: 600;
+    background-color: rgba(211, 211, 211, 1.0);
+
+}
+
+
+.navlist button:focus{
+    outline: none;
+}
+
+
+#navbar {
+    overflow: hidden;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin-right: 5%;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #container{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .html span{
+      margin-left:1%;
+  }
+
+  span{
+      color:lawngreen;
+  }
+
+  #input-html-container{
+      margin-right:1px;
+  }
+
+  .input {
+      width: 96%;
+      height: 60vh;
+      border: 1px solid darkgray;
+      border-radius:3%;
+      min-height: 200px;
+      min-width: 200px;
+      background-color:black;
+      color: lawngreen
+  }
+
+
+  .input:focus{
+      outline: none;
+  }
+
+  #container  div  span{
+    margin-left:5%;
+  }
+
+
+  #btnHtml, #btnOut{
+      background-color:gray;
+  }
+
+  .js-container, .css-container{
+      display: none;
+  }
+
+  .output-container iframe{
+    width: 300px;
+    height: 300px;
+    border: 1px solid darkgray;
+    min-height:250px;
+    min-width: 250px;
+    resize: both;
+    color: lawngreen;
+    border-radius: 3%;
+    background-color:white;
+  }
+
+
+
+ 

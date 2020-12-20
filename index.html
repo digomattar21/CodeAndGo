@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>RM's Live Coding</title>
+</head>
+<body>
+    <nav id ='navbar'>
+
+      <div id='title-container'>
+        <span id='title'><a href="">RM's Live Coding</a></span>
+      </div>
+
+      <div id='list-container'>
+        <ul class='navlist'>
+          <li><button class='toggle active' id ='btnHtml'>HTML</button></li>
+          <li><button class='toggle' id='btnCss'>CSS</button></li>
+          <li><button class='toggle' id ='btnJs'>JavaScript</button></li>
+          <li><button class='toggle active' id='btnOut'>Output</button></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">File
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+    </nav>
+
+    <div id = 'container'>
+        <div class ='html-container'>
+          <span>HTML</span>
+          <div id='input-html-container'>
+          <textarea id ='html-panel' class='input html' type="text"></textarea>
+        </div>
+        </div>
+
+        <div class ='css-container'>
+          <span>CSS</span>
+          <div id='input-css-container'>
+          <textarea id ='css-panel' class='input css' type="text"></textarea>
+        </div>
+        </div>
+
+        <div class ='js-container'>
+          <span>JavaScript</span>
+          <div id='input-js-container'>
+          <textarea id ='js-panel' class='input js' type="text"></textarea>
+        </div>
+        </div>
+
+        <div class='output-container'>
+          <span>Output</span>
+          <iframe id='output' class='panel' >
+          </iframe>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="jquery.tabComplete.js"></script>
+    <script src='./codePlayer.js' ></script>
+</body>
+</html>
