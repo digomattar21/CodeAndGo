@@ -7,25 +7,40 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <title>Code & Go</title>
+    <title>C&G Code Player</title>
 </head>
-<body>
+<body scroll="no">
     <nav id ='navbar'>
 
       <div id='title-container'>
-        <span id='title'><a href="">Code & Go</a></span>
+        <span id='title'><a href="">RM's Live Coding</a></span>
       </div>
 
+      <div id='list-container'>
+        <ul class='navlist'>
+          <li><button class='toggle active' id ='btnHtml'>HTML</button></li>
+          <li><button class='toggle' id='btnCss'>CSS</button></li>
+          <li><button class='toggle' id ='btnJs'>JavaScript</button></li>
+          <li><button class='toggle active' id='btnOut'>Output</button></li>
+        </ul>
+      </div>
+
+      <div id ='options-home-container'>
       <div class="dropdown">
-        <button class="dropbtn">Menu
+        <button class="dropbtn">Options
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="/codePlayer.html">CodePlayer</a>
-          <a href="#">About Us</a>
-          <a href="#">Donate</a>
+          <a href="#">Upload File</a>
+          <a href="#">Download File</a>
+          <a href="">Something Else</a>
         </div>
       </div>
+
+      <div class='home-container'>
+        <a href="./index.html"><img src="./assets/img/home.svg" alt="home"></a>
+      </div>
+    </div>
 
     </nav>
 

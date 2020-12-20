@@ -10,9 +10,8 @@ body{
     background-color:rgb(23, 152, 212);
     align-items: center;
     justify-content: space-between;
-    margin-top: -8px;
-    margin-left:-8px;
-    width: 101vw;
+    margin: 0;
+    width: 99vw;
 }
 
 #title{
@@ -112,7 +111,7 @@ body{
   }
 
   #container{
-      width: 100vw;
+      width: 99vw;
       display: flex;
       flex-direction: row;
   }
@@ -170,6 +169,14 @@ body{
     background-color:white;
   }
 
+
+  #options-home-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items:center;
+    margin-right: 2%;
+  }
 
 
  
