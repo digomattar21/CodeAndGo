@@ -1,2 +1,5 @@
 # CodePlayer
-HTML, CSS &amp; JavaScript code player website where you can test your coding skills in a quick and fun way
+Basic tool for front end coding and code testing in js.
+Built with: HTML5, CSS3, JavaScript & jQuery
+
+
