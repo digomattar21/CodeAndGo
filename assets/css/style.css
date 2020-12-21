@@ -1,62 +1,60 @@
 body{
-    font-family: 'JetBrains Mono';
-    background-color: black;
+  font-family: 'JetBrains Mono';
+  background-color: black;
 }
 
 #navbar{
-    display: flex;
-    flex-direction: row;
-    height: 8vh;
-    background-color:rgb(23, 152, 212);
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    width: 99vw;
+  display: flex;
+  flex-direction: row;
+  height: 8vh;
+  background-color:rgb(23, 152, 212);
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  width: 99vw;
 }
 
 #title{
-    font-weight:800;
-    color: lawngreen;
+  font-weight:800;
+  color: lawngreen;
 }
 
 #title-container{
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
 #title-container a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .navlist{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 .navlist button{
-    text-decoration: none;
-    border: 1px solid darkgray;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-family: 'JetBrains Mono';
-    border-radius: 10%;
-    color: black;
-    font-weight: 600;
-    background-color: rgba(211, 211, 211, 1.0);
+  text-decoration: none;
+  border: 1px solid darkgray;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: 'JetBrains Mono';
+  border-radius: 10%;
+  color: black;
+  font-weight: 600;
+  background-color: rgba(211, 211, 211, 1.0);
 
 }
-
 
 .navlist button:focus{
     outline: none;
 }
-
 
 #navbar {
     overflow: hidden;
@@ -73,19 +71,19 @@ body{
   .dropdown .dropbtn {
     border: none;
     outline: none;
+    font-size: 1.0em;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
+    font-family: 'JetBrains Mono'; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
-  
 
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: lightgray;
-    min-width: 160px;
+    min-width: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -111,64 +109,64 @@ body{
   }
 
   #container{
-      width: 99vw;
-      display: flex;
-      flex-direction: row;
-  }
-
-  .html span{
-      margin-left:1%;
-  }
-
-  span{
-      color:lawngreen;
-  }
-
-  #input-html-container{
-      margin-right:1px;
-  }
-
-  .input {
-      width: 96%;
-      height: 60vh;
-      border: 1px solid darkgray;
-      border-radius:3%;
-      min-height: 200px;
-      min-width: 200px;
-      background-color:black;
-      color: lawngreen
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
   }
 
 
-  .input:focus{
-      outline: none;
+  #html-span, #js-span, #css-span{
+    font-size: 1.4rem;
+    margin-left: 1%;
+    color: darkgray;
+    font-family: 'Alegreya Sans', sans-serif;
   }
-
-  #container  div  span{
-    margin-left:5%;
-  }
-
+  
 
   #btnHtml, #btnOut{
-      background-color:gray;
+      background-color:lightgray;
+  }
+
+  #btnCss, #btnJs{
+    background-color: gray;
   }
 
   .js-container, .css-container{
       display: none;
   }
 
-  .output-container iframe{
-    width: 300px;
-    height: 300px;
-    border: 1px solid darkgray;
-    min-height:250px;
-    min-width: 250px;
-    resize: both;
-    color: lawngreen;
-    border-radius: 3%;
-    background-color:white;
+  .js-container {
+    height: auto;
   }
 
+  .output-container iframe{
+    border: 1px solid darkgray;
+    color: lawngreen;
+    border-radius: 1%;
+    background-color:white;
+    width: 700px;
+    height: 350px;
+    min-height:300px;
+    min-width: 400px;
+  }
+
+  .output-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 1.5%;
+  }
+
+  .container{
+    margin-top: 1%;
+    width: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    
+
+  }
 
   #options-home-container{
     display: flex;
@@ -178,5 +176,60 @@ body{
     margin-right: 2%;
   }
 
+  .error-marker {
+    color: black;
+    width: 10px !important;
+    background-color: #ff0000;
+    margin-left:-25px
+  }
+  
+  .error-marker .error-message {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    border: 1px solid #999;
+    padding: 6px;
+    width: 140px;
+    left: 15px;
+    top: -1em;
+  }
+  
+  .error-marker:hover .error-message {
+    display: block;
+  }
 
- 
+  
+ .settings-strip{
+   display: flex;
+   flex-direction: row;
+   background-color:rgb(25, 25, 25);
+   width: auto;
+   height: auto;
+ }
+
+ .btnSettings{
+   width: 23px;
+   height: 23px;
+   margin-top:3px;
+   padding:0 0 ;
+   background-color: rgb(45, 45, 45);
+   border: 2px solid rgb(32, 31, 31);
+   border-radius: 5px;
+ }
+
+ .btnSettings:active{
+   background-color: rgb(32,32,32);
+   border: 2px solid rgb(25,25,25);
+   
+ }
+
+ .btnSettings:focus{
+  outline:none;
+  
+}
+
+ .CodeMirror{
+   resize: both;
+   min-height: 150px;
+   overflow: hidden;
+ }

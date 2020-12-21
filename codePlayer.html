@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <title>C&G Code Player</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <title>C&G Code Player</title>
 </head>
+
 <body scroll="no">
-    <nav id ='navbar'>
+  <nav id='navbar'>
 
-      <div id='title-container'>
-        <span id='title'><a href="">RM's Live Coding</a></span>
-      </div>
+    <div id='title-container'>
+      <span id='title'><a href="">Code Player</a></span>
+    </div>
 
-      <div id='list-container'>
-        <ul class='navlist'>
-          <li><button class='toggle active' id ='btnHtml'>HTML</button></li>
-          <li><button class='toggle' id='btnCss'>CSS</button></li>
-          <li><button class='toggle' id ='btnJs'>JavaScript</button></li>
-          <li><button class='toggle active' id='btnOut'>Output</button></li>
-        </ul>
-      </div>
+    <div id='list-container'>
+      <ul class='navlist'>
+        <li><button class='toggle active' id='btnHtml'>HTML</button></li>
+        <li><button class='toggle' id='btnCss'>CSS</button></li>
+        <li><button class='toggle' id='btnJs'>JavaScript</button></li>
+        <li><button class='toggle active' id='btnOut'>Output</button></li>
+      </ul>
+    </div>
 
-      <div id ='options-home-container'>
+    <div id='options-home-container'>
       <div class="dropdown">
         <button class="dropbtn">Options
           <i class="fa fa-caret-down"></i>
@@ -42,43 +48,66 @@
       </div>
     </div>
 
-    </nav>
+  </nav>
 
-    <div id = 'container'>
-        <div class ='html-container'>
-          <span>HTML</span>
-          <div id='input-html-container'>
-          <textarea id ='html-panel' class='input html' type="text"></textarea>
-        </div>
-        </div>
+  <div id='container'>
 
-        <div class ='css-container'>
-          <span>CSS</span>
-          <div id='input-css-container'>
-          <textarea id ='css-panel' class='input css' type="text"></textarea>
-        </div>
-        </div>
-
-        <div class ='js-container'>
-          <span>JavaScript</span>
-          <div id='input-js-container'>
-          <textarea id ='js-panel' class='input js' type="text"></textarea>
-        </div>
-        </div>
-
-        <div class='output-container'>
-          <span>Output</span>
-          <iframe id='output' class='panel' >
-          </iframe>
-        </div>
-
-
+    <div class ='container html-container'>
+      <div class='settings-strip'>
+      <div class='button-settings'>
+        <button class='btnSettings'>
+          <img src="./assets/img/settings.svg" alt="settings">
+        </button>
+      </div>
+        <span id='html-span'>HTML</span>
+      </div>
+        <div class='html-panel'></div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script src="jquery.tabComplete.js"></script>
-    <script src='./src/js/codePlayer.js ></script>
+    <div class ='container css-container'>
+      <div class='settings-strip'>
+      <div class='button-settings'>
+        <button class='btnSettings'>
+        <img src="./assets/img/settings.svg" alt="settings">
+      </button>
+      </div>
+      <span id='css-span'>CSS</span>
+    </div>
+      <div class='css-panel'></div>
+    </div>
+
+    <div class ='container js-container'>
+      <div class='settings-strip'>
+      <div class='button-settings'>
+        <button class='btnSettings'>
+          <img src="./assets/img/settings.svg" alt="settings">
+        </button>
+      </div>
+      <span id='js-span'>JS</span>
+      </div>
+      <div class='js-panel'></div>
+    </div>
+
+  </div>
+
+  <div class='output-container'>
+    <span>Output</span>
+    <iframe id='output' class='panel'>
+    </iframe>
+  </div>
+
+  
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="jquery.tabComplete.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jshint/2.11.0/jshint.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src='./src/js/codePlayer.js'></script>
+  <script src='./src/js/extra.js'></script>
 </body>
+
 </html>
